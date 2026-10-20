@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  :root {
+    --bg: #f6f8fa; --border: #d1d9e0; --fg: #1f2328; --muted: #59636e;
+    --credit: #1a5fb4; --milk: #c64600; --thesis: #a21caf; --chip: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151b23; --border: #3d444d; --fg: #f0f6fc; --muted: #9198a1;
+      --credit: #6cb6ff; --milk: #ff9b5c; --thesis: #e879f9; --chip: #0d1117;
+    }
+  }
+  html, body { margin: 0; background: transparent; font-family: "Inter", sans-serif; }
+  body { padding: 4px; display: flex; flex-direction: column; gap: 24px; align-items: flex-start; }
+  .card {
+    box-sizing: border-box; background: var(--bg); border: 2px solid var(--border);
+    border-radius: 16px; padding: 28px 32px; color: var(--fg); position: relative; overflow: hidden;
+  }
+  .half { width: 600px; height: 360px; display: flex; flex-direction: column; }
+  .wide { width: 1224px; height: 320px; display: flex; gap: 32px; padding-right: 0; }
+  .tag { font-size: 19px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 10px; }
+  h2 { font-size: 34px; font-weight: 600; margin: 0 0 10px; letter-spacing: -0.3px; }
+  .desc { font-size: 22px; line-height: 1.38; color: var(--muted); margin: 0; }
+  .metrics { display: flex; justify-content: space-between; margin-top: auto; }
+  .m .v { font-size: 42px; font-weight: 700; letter-spacing: -0.5px; }
+  .m .l { font-size: 19px; color: var(--muted); margin-top: 2px; }
+  .stack { font-size: 19px; color: var(--muted); margin-top: 16px; }
+  .credit .tag, .credit .v { color: var(--credit); }
+  .milk .tag, .milk .v { color: var(--milk); }
+  .thesis .tag { color: var(--thesis); }
+  .wide .left { display: flex; flex-direction: column; flex: 1; }
+  .steps { display: flex; align-items: center; gap: 9px; margin-top: auto; }
+  .step { font-size: 20px; font-weight: 500; padding: 7px 13px; border-radius: 999px;
+          background: var(--chip); border: 1.5px solid var(--border); }
+  .arrow { color: var(--muted); font-size: 20px; }
+  .wide img { height: 100%; width: 400px; object-fit: cover; margin: -30px 0 -30px 0;
+              height: calc(100% + 60px); border-left: 2px solid var(--border); }
+</style>
+</head>
+<body>
+  <div id="credit" class="card half credit">
+    <div class="tag">Machine learning · Credit risk</div>
+    <h2>Expected Loss under Basel II/III</h2>
+    <p class="desc">End-to-end PD, LGD and Expected Loss models built on 2.1M Lending Club loans.</p>
+    <div class="metrics">
+      <div class="m"><div class="v">0.773</div><div class="l">AUC-ROC, PD model</div></div>
+      <div class="m"><div class="v">1.25M</div><div class="l">loans scored</div></div>
+      <div class="m"><div class="v">3.52%</div><div class="l">portfolio EL rate</div></div>
+    </div>
+    <div class="stack">Python · LightGBM · CatBoost · SHAP</div>
+  </div>
+
+  <div id="milk" class="card half milk">
+    <div class="tag">Causal inference · Policy</div>
+    <h2>More Milk, Same Price</h2>
+    <p class="desc">Effect of the 2015 EU milk-quota abolition, from difference-in-differences and synthetic control.</p>
+    <div class="metrics">
+      <div class="m"><div class="v">+11%</div><div class="l">volume by 2019</div></div>
+      <div class="m"><div class="v">≈ 0</div><div class="l">price vs. controls</div></div>
+      <div class="m"><div class="v">≈ +9%</div><div class="l">farm income</div></div>
+    </div>
+    <div class="stack">Python · pyfixest · NumPy · SciPy</div>
+  </div>
+
+  <div id="thesis" class="card wide thesis">
+    <div class="left">
+      <div class="tag">PhD thesis code · Nature Communications 2026</div>
+      <h2>DrosophilaEyeCurvature</h2>
+      <p class="desc">The analysis pipeline behind my thesis on how the fly compound eye gets its 3D shape.</p>
+      <div class="steps">
+        <span class="step">Segmentation</span><span class="arrow">→</span>
+        <span class="step">Mesh</span><span class="arrow">→</span>
+        <span class="step">Finite-element model</span><span class="arrow">→</span>
+        <span class="step">Curvature</span>
+      </div>
+      <div class="stack">MATLAB</div>
+    </div>
+    <img src="eye_detail.png" alt="">
+  </div>
+</body>
+</html>

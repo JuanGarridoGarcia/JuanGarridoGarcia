@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  :root { --bg: #f6f8fa; --border: #d1d9e0; --fg: #1f2328; --muted: #59636e; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #151b23; --border: #3d444d; --fg: #f0f6fc; --muted: #9198a1; } }
+  html, body { margin: 0; background: transparent; font-family: "Inter", sans-serif; }
+  body { padding: 4px; display: flex; gap: 12px; }
+  .b { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px 8px 10px;
+       border: 1.5px solid var(--border); background: var(--bg); border-radius: 999px; color: var(--fg); }
+  .logo { width: 26px; height: 26px; border-radius: 6px; display: flex; align-items: center; justify-content: center;
+          font-weight: 700; font-size: 15px; color: #fff; }
+  .li { background: #0a66c2; } .or { background: #a6ce39; border-radius: 50%; }
+  .k { font-size: 17px; font-weight: 600; } .v { font-size: 17px; color: var(--muted); }
+</style>
+</head>
+<body>
+  <div id="linkedin" class="b"><div class="logo li">in</div><span class="k">LinkedIn</span><span class="v">juan-garrido-garcía-phd</span></div>
+  <div id="orcid" class="b"><div class="logo or">iD</div><span class="k">ORCID</span><span class="v">0000-0003-4116-3546</span></div>
+</body>
+</html>

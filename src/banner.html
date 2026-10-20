@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; background: transparent; }
+  .banner {
+    width: 1280px; height: 360px; box-sizing: border-box;
+    background: #000; border-radius: 16px; overflow: hidden;
+    position: relative; font-family: "Inter", sans-serif; color: #f0f3f6;
+  }
+  .eye {
+    position: absolute; right: 48px; top: -14px; height: 388px;
+  }
+  .text { position: absolute; left: 64px; top: 0; bottom: 0;
+          display: flex; flex-direction: column; justify-content: center; }
+  h1 { font-size: 62px; font-weight: 600; margin: 0 0 18px; letter-spacing: -0.5px; }
+  .role { font-size: 31px; font-weight: 500; margin: 0 0 14px; }
+  .sub { font-size: 24px; font-weight: 400; color: #a3acb6; margin: 0; }
+  .accent { width: 56px; height: 4px; border-radius: 2px; margin-bottom: 26px;
+            background: linear-gradient(90deg, #3ddc5a, #e33ce6); }
+</style>
+</head>
+<body>
+  <div class="banner">
+    <img class="eye" src="eye_crop.png" alt="">
+    <div class="text">
+      <div class="accent"></div>
+      <h1>Juan Garrido García</h1>
+      <p class="role">PhD in Computational Physics</p>
+      <p class="sub">Data science and scientific software &nbsp;·&nbsp; Seville, Spain</p>
+    </div>
+  </div>
+</body>
+</html>
