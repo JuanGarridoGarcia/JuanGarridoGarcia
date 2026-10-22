@@ -17,7 +17,7 @@ Since then I have been building data science projects in Python, from credit-ris
 ## Selected work
 
 <p align="center">
-  <a href="https://github.com/JuanGarridoGarcia/A-Deep-Dive-into-Expected-Loss-through-Credit-Scoring-Industry-Standard-Machine-Learning"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/credit-dark.png"><img src="assets/credit-light.png" alt="Credit risk: Expected Loss under Basel II/III. PD, LGD and Expected Loss models on 2.1M Lending Club loans. AUC-ROC 0.773, 1.25M loans scored, 3.52% portfolio EL rate." width="49%"></picture></a>
+  <a href="https://github.com/JuanGarridoGarcia/A-Deep-Dive-into-Expected-Loss-through-Credit-Scoring-Industry-Standard-Machine-Learning"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/credit-dark.png"><img src="assets/credit-light.png" alt="Credit risk: Expected Loss under Basel II/III. PD, LGD and Expected Loss models on 2.1M Lending Club loans. 2.14M loans scored, predicted loss 0.99 of the realised loss on unseen loans, AUC-ROC 0.685 on the test split." width="49%"></picture></a>
   <a href="https://github.com/JuanGarridoGarcia/More-Milk-Same-Price-Causal-Evaluation-EU-Milk-Quota-Abolition-"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/milk-dark.png"><img src="assets/milk-light.png" alt="More Milk, Same Price: causal evaluation of the 2015 EU milk-quota abolition. +11% milk volume by 2019, no price gap against controls, about +9% farm income." width="49%"></picture></a>
 </p>
 <p align="center">
